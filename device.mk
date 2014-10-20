@@ -180,8 +180,6 @@ include device/rockchip/common/etc/adblock.mk
 include device/rockchip/common/phone/rk30_phone.mk
 
 include device/rockchip/common/features/rk-core.mk
-include device/rockchip/common/features/rk-camera.mk
-include device/rockchip/common/features/rk-camera-front.mk
 include device/rockchip/common/features/rk-gms.mk
 
 ifeq ($(strip $(BUILD_WITH_RK_EBOOK)),true)
@@ -204,7 +202,6 @@ PRODUCT_PACKAGES += \
     gralloc.$(TARGET_BOARD_HARDWARE) \
     hwcomposer.$(TARGET_BOARD_HARDWARE) \
     lights.$(TARGET_BOARD_HARDWARE) \
-    camera.$(TARGET_BOARD_HARDWARE) \
     Camera \
     akmd 
 
