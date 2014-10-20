@@ -71,17 +71,6 @@ PRODUCT_PACKAGES += LauncherNew
 PRODUCT_PACKAGES += AllApp
 
 
-#########################################################
-# Copy proprietary apk
-#########################################################
-include device/rockchip/common/app/rkapk.mk
-
-########################################################
-# Google applications
-########################################################
-ifeq ($(strip $(BUILD_WITH_GOOGLE_MARKET)),true)
-include vendor/google/gapps_kk_mini.mk
-endif
 
 ########################################################
 # Face lock
