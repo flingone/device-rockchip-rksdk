@@ -71,17 +71,6 @@ PRODUCT_PACKAGES += LauncherNew
 PRODUCT_PACKAGES += AllApp
 
 
-#########################################################
-# Copy proprietary apk
-#########################################################
-include device/rockchip/common/app/rkapk.mk
-
-########################################################
-# Google applications
-########################################################
-ifeq ($(strip $(BUILD_WITH_GOOGLE_MARKET)),true)
-include vendor/google/gapps_kk_mini.mk
-endif
 
 ########################################################
 # Face lock
@@ -183,7 +172,6 @@ ifeq ($(strip $(BOARD_HAVE_BLUETOOTH)),true)
     include device/rockchip/common/bluetooth/rk30_bt.mk
 endif
 include device/rockchip/common/gps/rk30_gps.mk
-include device/rockchip/common/app/rkUserExperienceService.mk
 #include vendor/google/chrome.mk
 include device/rockchip/common/etc/adblock.mk
 
@@ -191,12 +179,9 @@ include device/rockchip/common/etc/adblock.mk
 include device/rockchip/common/phone/rk30_phone.mk
 
 include device/rockchip/common/features/rk-core.mk
-include device/rockchip/common/features/rk-camera.mk
-include device/rockchip/common/features/rk-camera-front.mk
 include device/rockchip/common/features/rk-gms.mk
 
 ifeq ($(strip $(BUILD_WITH_RK_EBOOK)),true)
-include device/rockchip/common/app/rkbook.mk
 endif
 
 # Live Wallpapers
@@ -215,7 +200,6 @@ PRODUCT_PACKAGES += \
     gralloc.$(TARGET_BOARD_HARDWARE) \
     hwcomposer.$(TARGET_BOARD_HARDWARE) \
     lights.$(TARGET_BOARD_HARDWARE) \
-    camera.$(TARGET_BOARD_HARDWARE) \
     Camera \
     akmd 
 
