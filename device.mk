@@ -528,5 +528,6 @@ PRODUCT_PACKAGES += \
     flingd \
     node \
     coffee-script \
+    scan_wifi \
 
 include device/rockchip/common/proprietary/rk_proprietary.mk
