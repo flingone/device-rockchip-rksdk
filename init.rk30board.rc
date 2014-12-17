@@ -272,7 +272,7 @@ service iso_operate /data/bluray.sh
     disabled
     oneshot
 
-service logcat /system/bin/logcat -f /data/log/main -r 1024 -n 5 -v threadtime
+service logcat /system/bin/logcat -v threadtime -f /data/log/main -r 1024 -n 5
     disabled
     oneshot
 
