@@ -637,3 +637,7 @@ service preinst_clr /system/bin/preinstall_cleanup.sh
 service getbootmode /system/bin/getbootmode.sh
     disabled
 	oneshot
+
+service klog_replay /system/bin/klog_replay
+	class main
+	oneshot
