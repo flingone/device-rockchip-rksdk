@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += LauncherNew
 PRODUCT_PACKAGES += AllApp
 
 
+PRODUCT_PACKAGES += klog_replay
 #########################################################
 # Copy proprietary apk
 #########################################################
