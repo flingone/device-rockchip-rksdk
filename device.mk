@@ -527,6 +527,7 @@ PRODUCT_PACKAGES += \
     otad \
     flingd \
     node \
+	flint-daemon \
     coffee-script \
     scan_wifi \
 
