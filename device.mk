@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     device/rockchip/rksdk/ueventd.$(TARGET_BOARD_HARDWARE).rc:root/ueventd.$(TARGET_BOARD_HARDWARE).rc \
     device/rockchip/rksdk/media_profiles_default.xml:system/etc/media_profiles_default.xml \
     device/rockchip/rksdk/alarm_filter.xml:system/etc/alarm_filter.xml \
+    device/rockchip/rksdk/Vendor_0eef_Product_0001.idc:system/usr/idc/Vendor_0eef_Product_0001.idc \
     device/rockchip/rksdk/rk29-keypad.kl:system/usr/keylayout/rk29-keypad.kl \
     device/rockchip/rksdk/rkxx-remotectl.kl:system/usr/keylayout/rkxx-remotectl.kl
 
