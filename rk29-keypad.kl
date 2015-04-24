@@ -14,3 +14,5 @@ key 103   DPAD_UP
 key 105   DPAD_LEFT
 key 106   DPAD_RIGHT
 key 113   VOLUME_MUTE
+key 1     ESCAPE
+key 14    DEL
