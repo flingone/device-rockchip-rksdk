@@ -287,6 +287,11 @@ service configd /system/bin/configd
     user root
     group system
 
+service remoted /system/bin/remoted
+    class main
+    user root
+    group system
+
 service otad /system/bin/otad
     class main
     user root

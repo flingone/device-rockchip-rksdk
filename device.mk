@@ -529,5 +529,6 @@ PRODUCT_PACKAGES += \
     node \
     coffee-script \
     scan_wifi \
+    remoted \
 
 include device/rockchip/common/proprietary/rk_proprietary.mk
